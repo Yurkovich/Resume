@@ -1,0 +1,13 @@
+@media (max-width: 430px) {
+  .experience__title,
+  .education__title,
+  .skill__title {
+    font-size: 8vw;
+  }
+
+  .experience__list,
+  .education__list,
+  .skill__list {
+    padding-left: 20px;
+  }
+}
