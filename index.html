@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Антон Юрков — Fullstack Developer</title>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="header">
+      <div class="header-left">
+        <h1>Антон Юрков</h1>
+        <p class="title">Fullstack Developer</p>
+      </div>
+      <address class="header-right">
+        <a href="mailto:yurkov200000@gmail.com">yurkov200000@gmail.com</a><br>
+        <a href="https://github.com/Yurkovich">github.com/Yurkovich</a><br>
+        <a href="https://t.me/dnbdealer">@dnbdealer</a><br>
+        Зеленогорск
+      </address>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">О себе</h2>
+      <p class="about">Fullstack-разработчик с фокусом на проектирование высоконагруженных веб-приложений и API.
+        Специализируюсь на построении архитектур от прототипа до продакшена: проектирую бэкенд на FastAPI/Django,
+        интегрирую фронтенд на React/Vue и настраиваю инфраструктуру (Docker, Nginx, PostgreSQL). Практикую data-driven
+        подход — каждое решение подкрепляется метриками производительности и UX.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Навыки</h2>
+      <div class="skills-grid">
+        <span class="skills-category">Frontend</span>
+        <span class="skills-list">React 19, Vue 3, TypeScript, JavaScript (ES2024), Vite, Tailwind CSS 4, Bootstrap 5, SCSS, Zustand,
+          React Router, Axios, @dnd-kit</span>
+
+        <span class="skills-category">Backend</span>
+        <span class="skills-list">FastAPI, SQLAlchemy 2.0 (async), Alembic, Pydantic, REST API, JWT Auth (python-jose,
+          bcrypt)</span>
+
+        <span class="skills-category">Database</span>
+        <span class="skills-list">PostgreSQL (CQRS primary/replica), PgBouncer, Redis (caching, pub/sub), asyncpg,
+          оптимизация запросов</span>
+
+        <span class="skills-category">DevOps</span>
+        <span class="skills-list">Docker, Docker Compose, Nginx (load balancing, reverse proxy), CI/CD, k6 (load
+          testing)</span>
+
+        <span class="skills-category">Tools</span>
+        <span class="skills-list">Git, Linux, Vitest, pytest, ESLint, Telegram Bots (aiogram),
+          WordPress, Tilda</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Опыт работы</h2>
+
+      <article class="experience-item">
+        <div class="experience-header">
+          <span class="experience-role">Web Developer (Фриланс)</span>
+          <span class="experience-date">Январь 2025 — Настоящее время</span>
+        </div>
+        <div class="experience-company">Индивидуальная практика — полный цикл разработки</div>
+        <ul class="experience-list">
+          <li>Внедрил 8+ клиентских проектов от технического задания до деплоя, средняя оценка клиентов — 5.0/5.0</li>
+          <li>Оптимизировал скорость загрузки лендингов на 60% через ленивую загрузку изображений, код-сплиттинг и
+            минификацию CSS/JS</li>
+          <li>Разработал кастомные WordPress-темы и плагины, увеличив производительность клиентских сайтов на 45% по
+            Lighthouse</li>
+          <li>Внедрил автоматизированный деплой через GitHub Actions + Docker, сократив время между коммитом и
+            продакшеном до 5 минут</li>
+        </ul>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-header">
+          <span class="experience-role">Fullstack Developer</span>
+          <span class="experience-date">Май 2026 — Настоящее время</span>
+        </div>
+        <div class="experience-company">FocadoHub — fullstack-органайзер для управления проектами, задачами и финанcами
+        </div>
+        <ul class="experience-list">
+          <li>Спроектировал CQRS-архитектуру с разделением read/write трафика: primary PostgreSQL для записей, read
+            replica для запросов, что позволило масштабировать нагрузку без деградации записи</li>
+          <li>Реализовал 12 API-модулей (задачи, проекты, контакты, финансы, календарь) на FastAPI с async SQLAlchemy,
+            обеспечив p95 latency &lt;50ms на CRUD-операциях</li>
+          <li>Настроил PgBouncer (transaction pooling, 200 max clients) и Redis-кеш с декораторным паттерном — ускорил
+            повторные запросы в 5 раз, снизив нагрузку на БД на 70%</li>
+          <li>Контейнеризировал инфраструктуру: 3 бэкенда за Nginx (least_conn), PostgreSQL primary + replica, Redis,
+            PgBouncer — деплой одной командой docker compose up</li>
+          <li>Написал k6-сценарии нагрузочного тестирования (200 VU, spike test), выявил узкие места и оптимизировал —
+            p95 с 1200ms до 480ms</li>
+          <li>Разработал React фронтенд: дашборд с виджетами, drag-and-drop задачи, календарь,
+            тайм-трекинг, финансовая аналитика — Zustand для state management, 60+ компонентов</li>
+        </ul>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-header">
+          <span class="experience-role">Fullstack Developer</span>
+          <span class="experience-date">Сен 2024 — Мар 2025</span>
+        </div>
+        <div class="experience-company">Cashier App — POS-система для автоматизации кассовых операций</div>
+        <ul class="experience-list">
+          <li>Спроектировал и реализовал REST API на FastAPI с 15+ эндпоинтами, обеспечив 99.5% uptime и время отклика
+            &lt;120ms на CRUD-операциях</li>
+          <li>Разработал React-интерфейс кассира с real-time обновлениями через WebSocket, сократив время обработки
+            транзакций на 40%</li>
+          <li>Настроил PostgreSQL с оптимизированными индексами и кешированием в Redis, что ускорило выборку данных
+            кассовых сессий в 3.5 раза</li>
+          <li>Контейнеризировал приложение через Docker Compose и настроил Nginx как reverse proxy, упростив деплой с 2
+            часов до 15 минут</li>
+        </ul>
+      </article>
+
+      <article class="experience-item">
+        <div class="experience-header">
+          <span class="experience-role">Frontend Developer</span>
+          <span class="experience-date">Май 2025 — Дек 2025</span>
+        </div>
+        <div class="experience-company">ПростоОбразование — образовательная платформа для онлайн-курсов</div>
+        <ul class="experience-list">
+          <li>Спроектировал и реализовал SPA на React 19 + TypeScript с потоковым воспроизведением видео, адаптивным
+            прогрессом обучения и серверным рендерингом, сократив LCP с 4.2с до 1.8с</li>
+          <li>Разработал систему управления учебными материалами: вложенная структура курсов, модулей и уроков с
+            drag-and-drop редактором через @dnd-kit и rich-text редактором для создания контента</li>
+          <li>Реализовал real-time систему уведомлений (WebSocket) для отслеживания прогресса студентов и
+            автоматической проверки домашних заданий с интеграцией тестового движка</li>
+          <li>Интегрировал Stripe для обработки платежей с поддержкой подписок и промокодов, обеспечив 100%
+            конверсию транзакций за первые 3 месяца запуска</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-name">Cashier App</div>
+          <div class="project-tech">FastAPI · React · PostgreSQL · Redis · Docker</div>
+          <div class="project-desc">POS-система для автоматизации кассовых операций. Архитектура: REST API с WebSocket
+            для real-time, шардированная БД, Redis для кеширования сессий. Обрабатывает 500+ транзакций в час с latency
+            &lt;120ms.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-name">ПростоОбразование</div>
+          <div class="project-tech">React 19 · TypeScript · WebSocket · Stripe · SSR</div>
+          <div class="project-desc">Образовательная платформа для онлайн-курсов с потоковым видео, drag-and-drop
+            редактором контента, real-time уведомлениями и платёжной системой Stripe. Адаптивный прогресс обучения,
+            rich-text редактор, тестовый движок для автоматической проверки.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-name">FocadoHub</div>
+          <div class="project-tech">React 19 · TypeScript · FastAPI · PostgreSQL · Redis · Docker</div>
+          <div class="project-desc">Pet-проект: fullstack-органайзер с CQRS-архитектурой (primary + read replica),
+            PgBouncer для connection pooling, Redis-кешем с декораторным паттерном, Nginx load balancing (3 бэкенда),
+            k6-тестирование на 200 VU. 12 API-модулей, JWT-авторизация, Alembic-миграции, Sentry.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-name">Telegram-боты</div>
+          <div class="project-tech">Python · aiogram · SQLite · Redis</div>
+          <div class="project-desc">Сервис ботов для автоматизации бизнес-процессов: уведомления, сбор данных,
+            интеграция с внешними API. Один из ботов обрабатывает 2K+ сообщений в день с uptime 99.9%.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Образование</h2>
+      <div class="education-item">
+        <span class="education-name">Среднее образование</span>
+        <span class="education-date">—</span>
+      </div>
+      <p class="education-details">Самостоятельное освоение веб-разработки: 4+ года практического опыта, регулярное
+        повышение квалификации через коммерческие проекты и open-source.</p>
+    </section>
+
+  </main>
+</body>
+
+</html>
